@@ -1,0 +1,6 @@
+datasets>=2.20
+openai>=1.0
+numpy>=1.24
+tqdm
+pandas
+# Install vLLM separately in a compatible CUDA environment for local generation.
