@@ -1,0 +1,4 @@
+torch>=2.2
+transformers>=4.45,<6
+peft>=0.13,<1
+accelerate>=0.34

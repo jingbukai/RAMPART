@@ -1,0 +1,97 @@
+{
+  "version": "agent-release-v2",
+  "appendix_source": "paper_appendix/APPENDIX_AGENT_PROMPTS_PAPER_SHORT.md",
+  "appendix_sha256": "e3ef2a2c00ee0130938f10b161b9f1adf30fd25db67f2f429df65b8148e32fec",
+  "agents": [
+    {
+      "name": "Attack Strategy Agent (Attack Planner)",
+      "implementation": "Red_team/attack_strategy_agent.py",
+      "class_name": "AttackStrategyAgent",
+      "source": "Red_team_v2/attack_strategy_agent.py",
+      "source_sha256": "22f90736233b32444013a9c383be4b7d114bb792da4dbe8a2c9294a1eac20829",
+      "release_prompt_sha256": "4f05ae74f13d390300598cdf911563979c03084a6f21cc05b4fca93478b16729",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "Patient Agent (Client Agent)",
+      "implementation": "Red_team/patient_agent.py",
+      "class_name": "PatientAgent",
+      "source": "Red_team_v2/patient_agent.py",
+      "source_sha256": "821c8a2fbefb3975eacb6c355ba9daeae2bc454bb2585077505d5ce0d3658673",
+      "release_prompt_sha256": "1bd043340ede5c551c3212163d46effe78dab51f726ca94630374fb7a111d7d4",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "Refiner Agent",
+      "implementation": "Red_team/refiner_agent.py",
+      "class_name": "RefinerAgent",
+      "source": "Red_team_v2/refiner_agent.py",
+      "source_sha256": "1b87dd5d4c1e0823a50010fff46a2a0f3a4bd041e204a3896c78d1e7dd0b7f14",
+      "release_prompt_sha256": "4545c4806612fe8585f5546f22260ae14988d6302bf96f5b5cb9b3f017be8f97",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "Attack Judge",
+      "implementation": "Red_team/judge.py",
+      "class_name": "AttackJudge",
+      "source": "Red_team_v2/judge.py",
+      "source_sha256": "bb54dfd64d8f1c6416bba912b327aa04881beb52658696d5422da32f67d0c106",
+      "release_prompt_sha256": "a791229c8551b1e1cfd8eae93cccc4e3dedee99cbf9e98f40392e6cdcf91a15d",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "Crisis Response Judge",
+      "implementation": "Red_team/crisis_response_judge.py",
+      "class_name": "CrisisResponseJudge",
+      "source": "Red_team_v2/crisis_response_judge.py",
+      "source_sha256": "541bb9ccc049a055cf5034b618d8f5d039b9141816547ba3543a0dc2731bcc49",
+      "release_prompt_sha256": "319e4a9ecaffd76c17f99ec2db1e2d1f5ead52c3e58abb1a754729825dabf0ce",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "Counselor Policy (AI Therapist / Blue Team)",
+      "implementation": "Blue_team/policy.py",
+      "class_name": "CounselorPolicy",
+      "source": "Red_team_v2/main.py",
+      "source_sha256": "8d117bb369c1e5f97d3028c641fb57312e0098f674a1cbecc2ece9696754c053",
+      "release_prompt_sha256": "4c8a79a85176c851b4641a0320c36baeeb4aca2eb5a462632ba5211846d735c6",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "Teacher Rewriter",
+      "implementation": "Blue_team/teacher_rewriter.py",
+      "class_name": "TeacherRewriter",
+      "source": "Red_team_v2/teacher_sft/teacher_rewriter.py",
+      "source_sha256": "62bfd95edd587f54522199bff6d9279d153592585b205755b7fdfd5c6b4b9e2c",
+      "release_prompt_sha256": "45c4408995c1c14fbb1ac477d7d4f7cb0e4bea61760dc7b9446b16174d7fe126",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "Safety Judge (Therapy Judge)",
+      "implementation": "Blue_team/safety_judge.py",
+      "class_name": "SafetyJudge",
+      "source": "others/blue_team_stage2_archive_20260911/Blue_team_v2/code/defense_judge.py",
+      "source_sha256": "aa1152c39d9812b6bd4567d01c6203f8293342a39e3460933fe7bffaa4e51899",
+      "release_prompt_sha256": "a3e628bcc896306203826e0bf9d8d4413337311c61e6d9ffd024a91c254c4c2b",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "B0 Sampler (SFT Policy)",
+      "implementation": "Blue_team/policy.py",
+      "class_name": "B0Sampler",
+      "source": "Blue_team_v2/generate_qwen25_fixed5_candidates.py",
+      "source_sha256": "ed114f6efc064ba2a4cb100bacde90fa9b1772c0041c1e73c817a9d74645ee8d",
+      "release_prompt_sha256": "4c8a79a85176c851b4641a0320c36baeeb4aca2eb5a462632ba5211846d735c6",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    },
+    {
+      "name": "Anonymous Preference Judge",
+      "implementation": "Blue_team/preference_judge.py",
+      "class_name": "PreferenceJudge",
+      "source": "Blue_team_v2/judge_qwen25_attack_failures_vs_fresh.py",
+      "source_sha256": "3205204362ea292dbe9a6b5b958365755c61677ed392b60391c6d07df5399055",
+      "release_prompt_sha256": "3a2b0e0264a27cfdcb896749d002500536a05cddeee7ee00d2ac1ee5801e00bb",
+      "treatment": "Condensed, edited adaptation of source behavior; not a verbatim historical prompt."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "counselor": {"base_url": "http://127.0.0.1:8000/v1", "model": "counselor", "api_key_env": "COUNSELOR_API_KEY"},
+  "planner": {"base_url": "http://127.0.0.1:8001/v1", "model": "agent", "api_key_env": "AGENT_API_KEY"},
+  "patient": {"base_url": "http://127.0.0.1:8001/v1", "model": "agent", "api_key_env": "AGENT_API_KEY"},
+  "refiner": {"base_url": "http://127.0.0.1:8001/v1", "model": "agent", "api_key_env": "AGENT_API_KEY"},
+  "attack_judge": {"base_url": "http://127.0.0.1:8002/v1", "model": "judge", "api_key_env": "JUDGE_API_KEY", "max_tokens": 2048},
+  "crisis_judge": {"base_url": "http://127.0.0.1:8002/v1", "model": "judge", "api_key_env": "JUDGE_API_KEY", "max_tokens": 2048},
+  "safety_judge": {"base_url": "http://127.0.0.1:8002/v1", "model": "judge", "api_key_env": "JUDGE_API_KEY"},
+  "preference_judge": {"base_url": "http://127.0.0.1:8002/v1", "model": "judge", "api_key_env": "JUDGE_API_KEY", "max_tokens": 2048},
+  "teacher": {"base_url": "http://127.0.0.1:8002/v1", "model": "teacher", "api_key_env": "TEACHER_API_KEY"}
+}

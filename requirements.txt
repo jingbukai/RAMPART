@@ -1,0 +1,2 @@
+# The red/blue data-construction demo uses only Python 3.11's standard library.
+# No packages are required for the three quick-start demo commands.
