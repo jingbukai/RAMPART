@@ -1,6 +1,7 @@
 # RAMPART — Compact Agent Release
 
 **Role-Aware Multi-Turn Preference Alignment via Red Teaming for Safer LLM-Based Mental Health Support**
+<img width="850" height="612" alt="image" src="https://github.com/user-attachments/assets/95b36ba8-76f2-4432-bebe-8dadf25e60bf" />
 
 A compact implementation of role-aware red teaming, teacher repair, and preference alignment. The core is organized into **Red_team** and **Blue_team**, with separate named agent classes and executable prompt modules. Benchmark evaluation wrappers are retained in greater detail under `Blue_team/benchmarks/`.
 
